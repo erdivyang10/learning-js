@@ -1,4 +1,4 @@
-let username ='somethingfgfgfgfg'
+let username ='something'
 let password = '1234567'
 
 let userChecker = function(myStrings){
