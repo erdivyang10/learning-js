@@ -16,8 +16,17 @@ const todos = [{ title: 'Buy Bread',
                  isDone: true,
                 }, 
                 {title: 'Create Tutorials',
-                isDone: false,
-              }]
+                isDone: true,
+                },
+                {title: 'Create Videos',
+                isDone: false,  
+                },
+                {title: 'Check GDPR',
+                    isDone: false,
+                },
+                {title: 'Add Google Maps',
+                    isDone: false,
+                }]
 
               //now pickup only todos which are completed
 
@@ -26,7 +35,11 @@ const todos = [{ title: 'Buy Bread',
 // })
 // console.log(thingsDone);
 
+//notdone
+const thingsNotDone = todos.filter(todo => !todo.isDone)
+thingsNotDone.forEach(thing => console.log(thing.title))
+
 //apply arrow functions here
 
-const thingsDone = todos.filter((todo)=> todo.isDone === true)
-console.log(thingsDone);
+// const thingsDone = todos.filter((todo)=> todo.isDone === true)
+// console.log(thingsDone);
